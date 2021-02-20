@@ -621,6 +621,7 @@ func sandboxBackendURL() string {
 		return v
 	}
 	id, _ := metadata.ProjectID()
+	id = "golang-org"
 	switch id {
 	case "golang-org":
 		return "http://sandbox.play-sandbox-fwd.il4.us-central1.lb.golang-org.internal/run"
